@@ -6,15 +6,28 @@
     <description>Recent content on Samuel May</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 26 Mar 2022 13:00:06 +1100</lastBuildDate><atom:link href="https://samuelmay.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 29 Mar 2022 12:18:31 +1100</lastBuildDate><atom:link href="https://samuelmay.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>A book recommendation</title>
-      <link>https://samuelmay.github.io/posts/books2022/</link>
+      <title>.NET 6 with top-to-bottom async C#</title>
+      <link>https://samuelmay.github.io/posts/dotnet-6-async/</link>
+      <pubDate>Tue, 29 Mar 2022 12:18:31 +1100</pubDate>
+      
+      <guid>https://samuelmay.github.io/posts/dotnet-6-async/</guid>
+      
+        <description>Recently I started a new project with all the latest .NET shiny bits. Visual Studio 2022, .NET 6, Dapper as the object mapper and every damn function from top to bottom marked as async. It absolutely flies and the performance goes down great in demos. Razor is a perfectly fine templating system, the dependency injection mostly just works, and I even appreciate the &amp;lsquo;$&amp;rsquo; string interpolation. I have to say productivity with a basic server-rendered app has been noticeably higher than trying to iterate an full Angular SPA and backend API with a small team.</description>
+      
+    </item>
+    
+    <item>
+      <title>Book review: &#34;Kill It With Fire&#34; by Marianne Bellotti</title>
+      <link>https://samuelmay.github.io/posts/kill_it_with_fire_book/</link>
       <pubDate>Sat, 26 Mar 2022 13:00:06 +1100</pubDate>
       
-      <guid>https://samuelmay.github.io/posts/books2022/</guid>
+      <guid>https://samuelmay.github.io/posts/kill_it_with_fire_book/</guid>
       
-        <description>I&amp;rsquo;m currently reading Kill It With Fire by Marianne Bellotti. It&amp;rsquo;s excellent.</description>
+        <description>This book has a lot of good advice and insight, that is unfortunately very relevant to some of the work I&amp;rsquo;m doing right now.
+I liked the consideration of &amp;lsquo;momentum&amp;rsquo; and how to maintain it to avoid the cycle of half-assed rewrites and migrations that are never quite finished.
+There&amp;rsquo;s an anecdote about how one US government team, working on immigration application software was using &amp;lsquo;Refugees saved from ISIS&amp;rsquo; as a metric.</description>
       
     </item>
     

@@ -3,13 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://samuelmay.github.io/</loc>
-    <lastmod>2022-03-26T13:00:06+11:00</lastmod>
+    <lastmod>2022-03-29T12:18:31+11:00</lastmod>
     <priority>0</priority>
   </url><url>
-    <loc>https://samuelmay.github.io/posts/books2022/</loc>
-    <lastmod>2022-03-26T13:00:06+11:00</lastmod>
+    <loc>https://samuelmay.github.io/posts/dotnet-6-async/</loc>
+    <lastmod>2022-03-29T12:18:31+11:00</lastmod>
   </url><url>
     <loc>https://samuelmay.github.io/posts/</loc>
+    <lastmod>2022-03-29T12:18:31+11:00</lastmod>
+  </url><url>
+    <loc>https://samuelmay.github.io/posts/kill_it_with_fire_book/</loc>
     <lastmod>2022-03-26T13:00:06+11:00</lastmod>
   </url><url>
     <loc>https://samuelmay.github.io/categories/</loc>
