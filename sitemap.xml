@@ -2,13 +2,19 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://samuelmay.github.io/posts/dotnet-6-async/</loc>
-    <lastmod>2022-03-29T12:18:31+11:00</lastmod>
-  </url><url>
     <loc>https://samuelmay.github.io/</loc>
-    <lastmod>2022-03-29T12:18:31+11:00</lastmod>
+    <lastmod>2022-04-06T17:01:01+11:00</lastmod>
+  </url><url>
+    <loc>https://samuelmay.github.io/posts/deploying_this_site/</loc>
+    <lastmod>2022-04-06T17:01:01+11:00</lastmod>
   </url><url>
     <loc>https://samuelmay.github.io/posts/</loc>
+    <lastmod>2022-04-06T17:01:01+11:00</lastmod>
+  </url><url>
+    <loc>https://samuelmay.github.io/posts/checksums_git_crlf/</loc>
+    <lastmod>2022-04-03T14:08:24+11:00</lastmod>
+  </url><url>
+    <loc>https://samuelmay.github.io/posts/dotnet-6-async/</loc>
     <lastmod>2022-03-29T12:18:31+11:00</lastmod>
   </url><url>
     <loc>https://samuelmay.github.io/posts/kill_it_with_fire_book/</loc>

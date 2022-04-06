@@ -6,7 +6,30 @@
     <description>Recent content in Posts on Samuel May</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Tue, 29 Mar 2022 12:18:31 +1100</lastBuildDate><atom:link href="https://samuelmay.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 06 Apr 2022 17:01:01 +1100</lastBuildDate><atom:link href="https://samuelmay.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Automating the deployment of this website</title>
+      <link>https://samuelmay.github.io/posts/deploying_this_site/</link>
+      <pubDate>Wed, 06 Apr 2022 17:01:01 +1100</pubDate>
+      
+      <guid>https://samuelmay.github.io/posts/deploying_this_site/</guid>
+      
+        <description>After some previous adventures getting this Hugo site up and running, I had a working but annoying process where I would edit the site in my web projects repo (with Hugo in live server mode) then publish it across to the GitHub Pages repo with hugo -d ..\samuelmay.github.io. Then I had to commit to the web projects repo to save the work, and separately commit and push the GitHub Pages repo to deploy the site.</description>
+      
+    </item>
+    
+    <item>
+      <title>Static website subresource integrity and text file line endings</title>
+      <link>https://samuelmay.github.io/posts/checksums_git_crlf/</link>
+      <pubDate>Sun, 03 Apr 2022 14:08:24 +1100</pubDate>
+      
+      <guid>https://samuelmay.github.io/posts/checksums_git_crlf/</guid>
+      
+        <description>When I was creating this site and playing around with Hug, I encountered this issue for the Anatole theme. Hugo is thorough enough when it minifies resource files to add &amp;lsquo;integrity&amp;rsquo; attributes with calculated checksums for the minified files.
+Now when you&amp;rsquo;re using GitHub pages or another web host that serves the content out of a Git repository, it turns out the operating system that the web host is running actually matters.</description>
+      
+    </item>
+    
     <item>
       <title>.NET 6 with top-to-bottom async C#</title>
       <link>https://samuelmay.github.io/posts/dotnet-6-async/</link>
