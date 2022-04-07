@@ -115,14 +115,14 @@
 <meta name="twitter:image" content="https://samuelmay.github.io/images/profilePicture.jpg"/>
 
 <meta name="twitter:title" content="Static website subresource integrity and text file line endings"/>
-<meta name="twitter:description" content="When I was creating this site and playing around with Hug, I encountered this issue for the Anatole theme. Hugo is thorough enough when it minifies resource files to add &lsquo;integrity&rsquo; attributes with calculated checksums for the minified files.
+<meta name="twitter:description" content="When I was creating this site and playing around with Hugo, I encountered this issue for the Anatole theme. Hugo is thorough enough when it minifies resource files to add &lsquo;integrity&rsquo; attributes with calculated checksums for the minified files.
 Now when you&rsquo;re using GitHub pages or another web host that serves the content out of a Git repository, it turns out the operating system that the web host is running actually matters."/>
 
 
 
   
   <meta property="og:title" content="Static website subresource integrity and text file line endings" />
-<meta property="og:description" content="When I was creating this site and playing around with Hug, I encountered this issue for the Anatole theme. Hugo is thorough enough when it minifies resource files to add &lsquo;integrity&rsquo; attributes with calculated checksums for the minified files.
+<meta property="og:description" content="When I was creating this site and playing around with Hugo, I encountered this issue for the Anatole theme. Hugo is thorough enough when it minifies resource files to add &lsquo;integrity&rsquo; attributes with calculated checksums for the minified files.
 Now when you&rsquo;re using GitHub pages or another web host that serves the content out of a Git repository, it turns out the operating system that the web host is running actually matters." />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://samuelmay.github.io/posts/checksums_git_crlf/" /><meta property="og:image" content="https://samuelmay.github.io/images/profilePicture.jpg"/><meta property="article:section" content="posts" />
@@ -146,7 +146,7 @@ Now when you&rsquo;re using GitHub pages or another web host that serves the con
         "alternativeHeadline": "",
         "description": "
       
-        When I was creating this site and playing around with Hug, I encountered this issue for the Anatole theme. Hugo is thorough enough when it minifies resource files to add \u0026lsquo;integrity\u0026rsquo; attributes with calculated checksums for the minified files.\nNow when you\u0026rsquo;re using GitHub pages or another web host that serves the content out of a Git repository, it turns out the operating system that the web host is running actually matters.
+        When I was creating this site and playing around with Hugo, I encountered this issue for the Anatole theme. Hugo is thorough enough when it minifies resource files to add \u0026lsquo;integrity\u0026rsquo; attributes with calculated checksums for the minified files.\nNow when you\u0026rsquo;re using GitHub pages or another web host that serves the content out of a Git repository, it turns out the operating system that the web host is running actually matters.
 
 
       
@@ -201,7 +201,7 @@ Now when you&rsquo;re using GitHub pages or another web host that serves the con
 
     ,
         "url" : "https:\/\/samuelmay.github.io\/posts\/checksums_git_crlf\/",
-        "wordCount" : "188",
+        "wordCount" : "187",
         "genre" : [ ],
         "keywords" : [ ]
     }
@@ -364,8 +364,8 @@ Now when you&rsquo;re using GitHub pages or another web host that serves the con
     
     <div class="post__content">
       <h1>Static Website Subresource Integrity and Text File Line Endings</h1>
-      <p>When I was creating this site and playing around with Hug, I encountered <a href="https://github.com/lxndrblz/anatole/issues/114#issuecomment-828750909">this issue for the Anatole theme</a>. Hugo is thorough enough when it minifies resource files to add &lsquo;integrity&rsquo; attributes with calculated checksums for the minified files.</p>
-<p>Now when you&rsquo;re using GitHub pages or another web host that serves the content out of a Git repository, it turns out the operating system that the web host is running actually matters. That is, it matters if you&rsquo;re developing on a different one. A bug/feature of Git is that <a href="https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings">it can magically change the line endings</a> of text files it checks out, to match the local operating system convention. Now if you have built your static site on Windows, pushed it to GitHub, and the GitHub Pages host server then checks out the site on a Linux host, the line endings on the resource files might be different - which will invalidate the checksums!</p>
+      <p>When I was creating this site and playing around with Hugo, I encountered <a href="https://github.com/lxndrblz/anatole/issues/114#issuecomment-828750909">this issue for the Anatole theme</a>. Hugo is thorough enough when it minifies resource files to add &lsquo;integrity&rsquo; attributes with calculated checksums for the minified files.</p>
+<p>Now when you&rsquo;re using GitHub pages or another web host that serves the content out of a Git repository, it turns out the operating system that the web host is running actually matters. That is, it matters if you&rsquo;re developing on a different one. A bug/feature of Git is that <a href="https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings">it can magically change the line endings</a> of text files it checks out, to match the local operating system convention. If you have built your static site on Windows, pushed it to GitHub, and the GitHub Pages host server then checks out the site on a Linux host, the line endings on the resource files might be different - which will invalidate the checksums!</p>
 <p>My solution was to check in a &lsquo;.gitattributes&rsquo; file to the GitHub Pages repository, which tells git to force CSS files to always be checked out with the same line endings:</p>
 <pre tabindex="0"><code>*.css text eol=crlf
 </code></pre></div>

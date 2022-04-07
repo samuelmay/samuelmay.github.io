@@ -25,7 +25,7 @@
       
       <guid>https://samuelmay.github.io/posts/checksums_git_crlf/</guid>
       
-        <description>When I was creating this site and playing around with Hug, I encountered this issue for the Anatole theme. Hugo is thorough enough when it minifies resource files to add &amp;lsquo;integrity&amp;rsquo; attributes with calculated checksums for the minified files.
+        <description>When I was creating this site and playing around with Hugo, I encountered this issue for the Anatole theme. Hugo is thorough enough when it minifies resource files to add &amp;lsquo;integrity&amp;rsquo; attributes with calculated checksums for the minified files.
 Now when you&amp;rsquo;re using GitHub pages or another web host that serves the content out of a Git repository, it turns out the operating system that the web host is running actually matters.</description>
       
     </item>
