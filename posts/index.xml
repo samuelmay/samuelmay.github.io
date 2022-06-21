@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Samuel May</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 06 Apr 2022 17:01:01 +1100</lastBuildDate><atom:link href="https://samuelmay.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 21 Jun 2022 10:23:00 +1100</lastBuildDate><atom:link href="https://samuelmay.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>My current thoughts on the most useful parts of Agile development</title>
+      <link>https://samuelmay.github.io/posts/my_agile_interpretation/</link>
+      <pubDate>Tue, 21 Jun 2022 10:23:00 +1100</pubDate>
+      
+      <guid>https://samuelmay.github.io/posts/my_agile_interpretation/</guid>
+      
+        <description>In real life, if you sprint repeatedly with small pauses in between, that&amp;rsquo;s not sustatinable, that&amp;rsquo;s &amp;lsquo;interval training&amp;rsquo;, which is a method to drive yourself to exhaustion in the shortest possible time! I think language actually has a really important role in influencing our expectations and mindset. I would prefer to call iterations &amp;lsquo;jogs&amp;rsquo; or &amp;rsquo;laps&amp;rsquo; to express the endurance that should be expected. Or simply, &amp;lsquo;iterations&amp;rsquo;.
+The infamous daily stand-up meeting can definitely have value, but it usually snowballs out of control into a ramble that takes up most of an hour.</description>
+      
+    </item>
+    
     <item>
       <title>Automating the deployment of this website</title>
       <link>https://samuelmay.github.io/posts/deploying_this_site/</link>
