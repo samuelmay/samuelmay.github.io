@@ -3,10 +3,13 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://samuelmay.github.io/</loc>
-    <lastmod>2022-07-22T09:33:25+10:00</lastmod>
+    <lastmod>2022-09-08T09:14:14+10:00</lastmod>
   </url><url>
     <loc>https://samuelmay.github.io/posts/</loc>
-    <lastmod>2022-07-22T09:33:25+10:00</lastmod>
+    <lastmod>2022-09-08T09:14:14+10:00</lastmod>
+  </url><url>
+    <loc>https://samuelmay.github.io/posts/version_the_database/</loc>
+    <lastmod>2022-09-08T09:14:14+10:00</lastmod>
   </url><url>
     <loc>https://samuelmay.github.io/posts/rustau_july_2022/</loc>
     <lastmod>2022-07-22T09:33:25+10:00</lastmod>

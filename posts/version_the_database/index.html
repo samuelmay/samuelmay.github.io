@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme="dark"
+  class="html"
+><head>
+  <title>
+    
+      Samuel May
+        |
+        Version the god-damned database
+
+
+      
+
+
+    
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.102.3" /><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Samuel May" />
+  <meta
+    name="description"
+    content="
+      Just another professional computer programmer
+
+
+    "
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.5259d55db7b9c675f751f0865411bd84a410f3ffcb5105b8fc00b22fcb739309.css"
+      integrity="sha256-UlnVXbe5xnX3UfCGVBG9hKQQ8//LUQW4/ACyL8tzkwk="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.31b0a1f317f55c529a460897848c97436bb138b19c399b37de70d463a8bf6ed5.css"
+    integrity="sha256-MbCh8xf1XFKaRgiXhIyXQ2uxOLGcOZs33nDUY6i/btU="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.69685904d5c2a0c6258d03c207b778c10466edf6cea928cc0164c376b0ad0930.css"
+    integrity="sha256-aWhZBNXCoMYljQPCB7d4wQRm7fbOqSjMAWTDdrCtCTA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.6d585e78d28cce1200d39fb133c92ed83df01738da721d0f48fb6eac62d24e04.css"
+    integrity="sha256-bVheeNKMzhIA05&#43;xM8ku2D3wFzjach0PSPturGLSTgQ="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.6b00d96498d59caa0dbcf9b49d30d821915291f2ceb0e19248523c8607ff43fa.css"
+    integrity="sha256-awDZZJjVnKoNvPm0nTDYIZFSkfLOsOGSSFI8hgf/Q/o="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://samuelmay.github.io/posts/version_the_database/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.738c0e3a493854876aeab9e2316fd43f1936aeeac4cc6b3e60bb26456dba72ad.js"
+      integrity="sha256-c4wOOkk4VIdq6rniMW/UPxk2rurEzGs&#43;YLsmRW26cq0="
+      crossorigin="anonymous"
+    ></script>
+
+  
+
+  
+
+
+  
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://samuelmay.github.io/images/profilePicture.jpg"/>
+
+<meta name="twitter:title" content="Version the god-damned database"/>
+<meta name="twitter:description" content="Graph-based version control is, I think, one of the most powerful organisational concepts that has emerged from computer programming practice. With Git (or another modern SCM) engineers have superpowers for dealing with change management.
+However, the long-suffering database doesn&rsquo;t seem to get as much love in the modern CI/CD pipeline. Certainly all sorts of useful things can be done, but usually they aren&rsquo;t. I&rsquo;ve heard that traditional relational database skills are in decline - maybe that&rsquo;s the case."/>
+
+
+
+  
+  <meta property="og:title" content="Version the god-damned database" />
+<meta property="og:description" content="Graph-based version control is, I think, one of the most powerful organisational concepts that has emerged from computer programming practice. With Git (or another modern SCM) engineers have superpowers for dealing with change management.
+However, the long-suffering database doesn&rsquo;t seem to get as much love in the modern CI/CD pipeline. Certainly all sorts of useful things can be done, but usually they aren&rsquo;t. I&rsquo;ve heard that traditional relational database skills are in decline - maybe that&rsquo;s the case." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://samuelmay.github.io/posts/version_the_database/" /><meta property="og:image" content="https://samuelmay.github.io/images/profilePicture.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-09-08T09:14:14+10:00" />
+<meta property="article:modified_time" content="2022-09-08T09:14:14+10:00" /><meta property="og:site_name" content="Samuel May" />
+
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "posts",
+        "name": "Version the god-damned database",
+        "headline": "Version the god-damned database",
+        "alternativeHeadline": "",
+        "description": "
+      
+        Graph-based version control is, I think, one of the most powerful organisational concepts that has emerged from computer programming practice. With Git (or another modern SCM) engineers have superpowers for dealing with change management.\nHowever, the long-suffering database doesn\u0026rsquo;t seem to get as much love in the modern CI\/CD pipeline. Certainly all sorts of useful things can be done, but usually they aren\u0026rsquo;t. I\u0026rsquo;ve heard that traditional relational database skills are in decline - maybe that\u0026rsquo;s the case.
+
+
+      
+
+
+    ",
+        "inLanguage": "en-us",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/samuelmay.github.io\/posts\/version_the_database\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Samuel May"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Samuel May"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Samuel May"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Samuel May"
+        },
+        "copyrightYear" : "2022",
+        "dateCreated": "2022-09-08T09:14:14.00Z",
+        "datePublished": "2022-09-08T09:14:14.00Z",
+        "dateModified": "2022-09-08T09:14:14.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Samuel May",
+            "url": "https://samuelmay.github.io/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/samuelmay.github.io\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+        
+        "https://samuelmay.github.io/images/profilePicture.jpg"
+
+
+      
+      ]
+
+    ,
+        "url" : "https:\/\/samuelmay.github.io\/posts\/version_the_database\/",
+        "wordCount" : "765",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+</head>
+<body
+    
+      class="body theme--dark"
+
+    
+  >
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+
+        
+      ><div
+  class="sidebar
+    .
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/profilePicture.jpg"
+        alt="profile picture"
+      />
+      <h1 class="sidebar__introduction-title">
+        <a href="/">Samuel May</a>
+      </h1>
+      <div class="sidebar__introduction-description">
+        <p>Just another professional computer programmer</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a href="https://www.linkedin.com/in/samuel-may-982b8559/" rel="me" aria-label="Linkedin" title="Linkedin">
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a href="https://github.com/samuelmay" rel="me" aria-label="GitHub" title="GitHub">
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a href="mailto:sam@samuelmay.net" rel="me" aria-label="E-mail" title="E-mail">
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Samuel May
+        2022
+
+
+      
+    </li>
+    
+  </ul>
+</footer></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+
+        
+      >
+        <header class="header"><div
+  class="
+    .
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        <li class="nav__list-item">
+          <a
+            
+            href="/"
+            
+            title=""
+            >About</a
+          >
+        </li>
+
+      
+        
+        <li class="nav__list-item">
+          <a
+            
+            href="/posts/"
+            
+            title=""
+            >Blog</a
+          >
+        </li>
+
+      
+        
+        <li class="nav__list-item">
+          <a
+            
+            href="/portfolio/"
+            
+            title=""
+            >Projects</a
+          >
+        </li>
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      .
+
+    "
+  >
+    
+    <div class="post__content">
+      <h1>Version the God-Damned Database</h1>
+      <p>Graph-based version control is, I think, one of the most powerful organisational concepts that has emerged from computer programming practice. With Git (or another modern SCM) engineers have superpowers for dealing with change management.</p>
+<p>However, the long-suffering database doesn&rsquo;t seem to get as much love in the modern CI/CD pipeline. Certainly all sorts of useful things <em>can</em> be done, but usually they aren&rsquo;t. I&rsquo;ve heard that traditional relational database skills are in decline - maybe that&rsquo;s the case. Definitely the &lsquo;DBA&rsquo; role seems to be disappearing. Maybe it&rsquo;s just not as fashionable as the containerized and serveless technologies we&rsquo;ve introduced in the application layer in the last decade, so people aren&rsquo;t talking about it, and aren&rsquo;t spending money on it internally. After NoSQL lost its shine, I&rsquo;d joke that it feels like everyone just quietly started using PostgreSQL and stopped talking about it!</p>
+<p>A flexible app - and definitely type of app that is designed for very different configurations for different users - is going to store a lot of configuration in the database. Additionally, there will be a lot of enumerations of types or dictionary data, for example localized text strings. I&rsquo;ve heard this called the &lsquo;reference data&rsquo; in <a href="https://enterprisecraftsmanship.com/posts/database-versioning-best-practices/">one of the blog posts</a> I read on this topic, from Vladimir Khorikov. Configuration data that is different for each client instance, is actually a use case where I think NoSQL is a good idea, and there&rsquo;s a good argument that the configuration should be stored in a separate database to the application data.</p>
+<p>I was first introduced to the idea of database versioning when I was writing an Android app. If you use an embedded SQLite database in your app, you were required to have a version number for it, and supply a migration functions between versions. I&rsquo;m pretty sure this was enforced when you created the app package. Ruby On Rails also has a robust database migration system.</p>
+<p>A good summary of database migration practices was in this old <a href="https://news.ycombinator.com/item?id=500496">Hacker News post</a> from Jason Kester. To quote:</p>
+<ul>
+<li>every database has a build number stamped into it</li>
+<li>every schema change goes into a change script called e.g. <code>build_105-106.sql</code></li>
+<li>changes are applied to the dev database as they are made</li>
+<li>the automated build pins the change script and runs it against an integration database</li>
+<li>a schema diff tool is used to compare dev and integration schemas.  if they don&rsquo;t match, the build breaks.</li>
+<li>the build creates a file called <code>build_106-107.sql</code> and sticks it into source control</li>
+<li>If you screw up and commit a change straight to dev without scripting out the change, it will break the next build and it will hurt to fix it. You&rsquo;ll learn quickly not to try to shortcut the process.</li>
+</ul>
+<p>So yes the rough idea is the same as the old Android app SQLite databases. The database has a version number. You have to supply a migration script between versions. In an ideal world, your pipeline will apply the migration scripts to another test database, and validate that it matches the expected source of truth. We end up with a lovely, verified chain of diffs or deltas describing the changes to the database from the beginning, just like a version control log for source code.</p>
+<p>There are further things that you can do though. The first one is extend the database version number, and keep an audit log of what migration scripts have been actually been run, in a table that records the script file name as well as the database version number. This gives you a more useful history.</p>
+<p>Secondly, having idempotent database migration scripts is really good. This was a strong policy at MemNet. I used to grumble at having to wrangling those SQL &lsquo;IF&rsquo; statements but it sure saved me a few times.</p>
+<p>Thirdly (and this more of a philosophy) there&rsquo;s the idea to not bother with rollbacks. Don&rsquo;t change past migration scripts, don&rsquo;t attempt to rollback schemas on production. Forward is the only way out!</p>
+<p>So, looking at the title again, it&rsquo;s clear I have feelings about this. It should be a high priority for the foundations of a new project, and probably a priority for an existing project if the speed of your feature factory is high. Once you lose track of what changes have and haven&rsquo;t been applied to a production database, it&rsquo;s a really horrible hole to be in. You start consuming huge amounts of time, as releases introduce bugs, and people frantically start doing schema diffs on backups and rewriting all those slapdash SQL scripts to be idempotent.</p>
+<p><a href="http://thecodelesscode.com/case/131">Dont&rsquo; think - know</a>.</p>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    
+  </div>
+
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Samuel May
+        2022
+
+
+      
+    </li>
+    
+  </ul>
+</footer></body>
+</html>

@@ -6,7 +6,19 @@
     <description>Recent content in Posts on Samuel May</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 22 Jul 2022 09:33:25 +1000</lastBuildDate><atom:link href="https://samuelmay.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 08 Sep 2022 09:14:14 +1000</lastBuildDate><atom:link href="https://samuelmay.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Version the god-damned database</title>
+      <link>https://samuelmay.github.io/posts/version_the_database/</link>
+      <pubDate>Thu, 08 Sep 2022 09:14:14 +1000</pubDate>
+      
+      <guid>https://samuelmay.github.io/posts/version_the_database/</guid>
+      
+        <description>Graph-based version control is, I think, one of the most powerful organisational concepts that has emerged from computer programming practice. With Git (or another modern SCM) engineers have superpowers for dealing with change management.
+However, the long-suffering database doesn&amp;rsquo;t seem to get as much love in the modern CI/CD pipeline. Certainly all sorts of useful things can be done, but usually they aren&amp;rsquo;t. I&amp;rsquo;ve heard that traditional relational database skills are in decline - maybe that&amp;rsquo;s the case.</description>
+      
+    </item>
+    
     <item>
       <title>Rust Australia Sydney meetup</title>
       <link>https://samuelmay.github.io/posts/rustau_july_2022/</link>
