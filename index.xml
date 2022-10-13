@@ -6,7 +6,20 @@
     <description>Recent content in About on Samuel May</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 08 Sep 2022 09:14:14 +1000</lastBuildDate><atom:link href="https://samuelmay.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 13 Oct 2022 16:54:26 +1100</lastBuildDate><atom:link href="https://samuelmay.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>I got a Framework Laptop</title>
+      <link>https://samuelmay.github.io/posts/framework/</link>
+      <pubDate>Thu, 13 Oct 2022 16:54:26 +1100</pubDate>
+      
+      <guid>https://samuelmay.github.io/posts/framework/</guid>
+      
+        <description>I&amp;rsquo;ve been following the Framework laptop since it was announced. A few weeks ago I finally got the email that they were taking pre-orders in Australia. I jumped right on it. Yesterday, it arrived!
+I (of course) got the DIY edition with an SSD and memory stick included separately. It arrived with a Torx screwdriver included and the laptop components in their OEM packaging.
+You loosen 5 screws on the bottom (they&amp;rsquo;re captive, so there&amp;rsquo;s no opportunity to lose them), turn it over, and gently pry off the keyboard panel.</description>
+      
+    </item>
+    
     <item>
       <title>Version the god-damned database</title>
       <link>https://samuelmay.github.io/posts/version_the_database/</link>
