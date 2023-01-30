@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html
+  dir="ltr"
+  lang="en"
+  data-theme="dark"
+  class="html"
+><head>
+  <title>
+    
+      Samuel May
+        |
+        IIS Websites with a Site ID of 0
+
+
+      
+
+
+    
+  </title>
+
+  
+  <meta charset="utf-8" /><meta name="generator" content="Hugo 0.110.0"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="author" content="Samuel May" />
+  <meta
+    name="description"
+    content="
+      Just another professional computer programmer
+
+
+    "
+  />
+  
+  
+    
+    
+    <link
+      rel="stylesheet"
+      href="/scss/main.min.5259d55db7b9c675f751f0865411bd84a410f3ffcb5105b8fc00b22fcb739309.css"
+      integrity="sha256-UlnVXbe5xnX3UfCGVBG9hKQQ8//LUQW4/ACyL8tzkwk="
+      crossorigin="anonymous"
+      type="text/css"
+    />
+
+  
+
+  
+  <link
+    rel="stylesheet"
+    href="/css/markupHighlight.min.31b0a1f317f55c529a460897848c97436bb138b19c399b37de70d463a8bf6ed5.css"
+    integrity="sha256-MbCh8xf1XFKaRgiXhIyXQ2uxOLGcOZs33nDUY6i/btU="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/fontawesome.min.69685904d5c2a0c6258d03c207b778c10466edf6cea928cc0164c376b0ad0930.css"
+    integrity="sha256-aWhZBNXCoMYljQPCB7d4wQRm7fbOqSjMAWTDdrCtCTA="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/solid.min.6d585e78d28cce1200d39fb133c92ed83df01738da721d0f48fb6eac62d24e04.css"
+    integrity="sha256-bVheeNKMzhIA05&#43;xM8ku2D3wFzjach0PSPturGLSTgQ="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link
+    rel="stylesheet"
+    href="/fontawesome/css/brands.min.6b00d96498d59caa0dbcf9b49d30d821915291f2ceb0e19248523c8607ff43fa.css"
+    integrity="sha256-awDZZJjVnKoNvPm0nTDYIZFSkfLOsOGSSFI8hgf/Q/o="
+    crossorigin="anonymous"
+    type="text/css"
+  />
+  
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+
+  <link rel="canonical" href="https://samuelmay.github.io/posts/iiszero/" />
+
+  
+  
+  
+  
+  <script
+    type="text/javascript"
+    src="/js/anatole-header.min.f9132794301a01ff16550ed66763482bd848f62243d278f5e550229a158bfd32.js"
+    integrity="sha256-&#43;RMnlDAaAf8WVQ7WZ2NIK9hI9iJD0nj15VAimhWL/TI="
+    crossorigin="anonymous"
+  ></script>
+
+  
+    
+    
+    <script
+      type="text/javascript"
+      src="/js/anatole-theme-switcher.min.738c0e3a493854876aeab9e2316fd43f1936aeeac4cc6b3e60bb26456dba72ad.js"
+      integrity="sha256-c4wOOkk4VIdq6rniMW/UPxk2rurEzGs&#43;YLsmRW26cq0="
+      crossorigin="anonymous"
+    ></script>
+
+  
+
+  
+
+
+  
+  <meta name="twitter:card" content="summary_large_image"/>
+<meta name="twitter:image" content="https://samuelmay.github.io/images/profilePicture.jpg"/>
+
+<meta name="twitter:title" content="IIS Websites with a Site ID of 0"/>
+<meta name="twitter:description" content="tl;dr if you create a website with a site ID of 0 in IIS, it will break the site
+Recently I lost far too much of my life discovering why a change broke one of our ASP.NET websites.
+We were in the process of migrating to a new CI/CD pipeline, and had successfully tested it in both a development and in a mock production environment. All looked good, so we went ahead and deployed to the production server (This was a blue/green deployment, so the previous version was running happily on a different server the whole time)."/>
+
+
+
+  
+  <meta property="og:title" content="IIS Websites with a Site ID of 0" />
+<meta property="og:description" content="tl;dr if you create a website with a site ID of 0 in IIS, it will break the site
+Recently I lost far too much of my life discovering why a change broke one of our ASP.NET websites.
+We were in the process of migrating to a new CI/CD pipeline, and had successfully tested it in both a development and in a mock production environment. All looked good, so we went ahead and deployed to the production server (This was a blue/green deployment, so the previous version was running happily on a different server the whole time)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://samuelmay.github.io/posts/iiszero/" /><meta property="og:image" content="https://samuelmay.github.io/images/profilePicture.jpg"/><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2022-11-25T16:51:51+11:00" />
+<meta property="article:modified_time" content="2022-11-25T16:51:51+11:00" /><meta property="og:site_name" content="Samuel May" />
+
+
+
+  
+  
+  
+  
+  <script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "articleSection": "posts",
+        "name": "IIS Websites with a Site ID of 0",
+        "headline": "IIS Websites with a Site ID of 0",
+        "alternativeHeadline": "",
+        "description": "
+      
+        tl;dr if you create a website with a site ID of 0 in IIS, it will break the site\nRecently I lost far too much of my life discovering why a change broke one of our ASP.NET websites.\nWe were in the process of migrating to a new CI\/CD pipeline, and had successfully tested it in both a development and in a mock production environment. All looked good, so we went ahead and deployed to the production server (This was a blue\/green deployment, so the previous version was running happily on a different server the whole time).
+
+
+      
+
+
+    ",
+        "inLanguage": "en-us",
+        "isFamilyFriendly": "true",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/samuelmay.github.io\/posts\/iiszero\/"
+        },
+        "author" : {
+            "@type": "Person",
+            "name": "Samuel May"
+        },
+        "creator" : {
+            "@type": "Person",
+            "name": "Samuel May"
+        },
+        "accountablePerson" : {
+            "@type": "Person",
+            "name": "Samuel May"
+        },
+        "copyrightHolder" : {
+            "@type": "Person",
+            "name": "Samuel May"
+        },
+        "copyrightYear" : "2022",
+        "dateCreated": "2022-11-25T16:51:51.00Z",
+        "datePublished": "2022-11-25T16:51:51.00Z",
+        "dateModified": "2022-11-25T16:51:51.00Z",
+        "publisher":{
+            "@type":"Organization",
+            "name": "Samuel May",
+            "url": "https://samuelmay.github.io/",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https:\/\/samuelmay.github.io\/favicon-32x32.png",
+                "width":"32",
+                "height":"32"
+            }
+        },
+        "image": 
+      [
+        
+        "https://samuelmay.github.io/images/profilePicture.jpg"
+
+
+      
+      ]
+
+    ,
+        "url" : "https:\/\/samuelmay.github.io\/posts\/iiszero\/",
+        "wordCount" : "807",
+        "genre" : [ ],
+        "keywords" : [ ]
+    }
+  </script>
+
+
+
+</head>
+<body
+    
+      class="body theme--dark"
+
+    
+  >
+    <div class="wrapper">
+      <aside
+        
+          class="wrapper__sidebar"
+
+        
+      ><div
+  class="sidebar
+    .
+
+  "
+>
+  <div class="sidebar__content">
+    <div class="sidebar__introduction">
+      <img
+        class="sidebar__introduction-profileimage"
+        src="/images/profilePicture.jpg"
+        alt="profile picture"
+      />
+      <h1 class="sidebar__introduction-title">
+        <a href="/">Samuel May</a>
+      </h1>
+      <div class="sidebar__introduction-description">
+        <p>Just another professional computer programmer</p>
+      </div>
+    </div>
+    <ul class="sidebar__list">
+      
+        <li class="sidebar__list-item">
+          <a href="https://www.linkedin.com/in/samuel-may-982b8559/" rel="me" aria-label="Linkedin" title="Linkedin">
+            <i class="fab fa-linkedin fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a href="https://github.com/samuelmay" rel="me" aria-label="GitHub" title="GitHub">
+            <i class="fab fa-github fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+        <li class="sidebar__list-item">
+          <a href="mailto:sam@samuelmay.net" rel="me" aria-label="E-mail" title="E-mail">
+            <i class="fas fa-envelope fa-2x" aria-hidden="true"></i>
+          </a>
+        </li>
+
+      
+    </ul>
+  </div><footer class="footer footer__sidebar">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Samuel May
+        2023
+
+
+      
+    </li>
+    
+  </ul>
+</footer></div>
+</aside>
+      <main
+        
+          class="wrapper__main"
+
+        
+      >
+        <header class="header"><div
+  class="
+    .
+
+  "
+>
+  <a role="button" class="navbar-burger" data-target="navMenu" aria-label="menu" aria-expanded="false">
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+    <span aria-hidden="true" class="navbar-burger__line"></span>
+  </a>
+  <nav class="nav">
+    <ul class="nav__list" id="navMenu">
+      
+      
+        
+        <li class="nav__list-item">
+          <a
+            
+            href="/"
+            
+            title=""
+            >About</a
+          >
+        </li>
+
+      
+        
+        <li class="nav__list-item">
+          <a
+            
+            href="/posts/"
+            
+            title=""
+            >Blog</a
+          >
+        </li>
+
+      
+        
+        <li class="nav__list-item">
+          <a
+            
+            href="/portfolio/"
+            
+            title=""
+            >Projects</a
+          >
+        </li>
+
+      
+    </ul>
+    <ul class="nav__list nav__list--end">
+      
+      
+        <li class="nav__list-item">
+          <div class="themeswitch">
+            <a title="Switch Theme">
+              <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a>
+          </div>
+        </li>
+
+      
+    </ul>
+  </nav>
+</div>
+</header>
+  <div
+    class="post 
+      .
+
+    "
+  >
+    
+    <div class="post__content">
+      <h1>IIS Websites With a Site ID of 0</h1>
+      <p><strong>tl;dr if you create a website with a site ID of 0 in IIS, it will break the site</strong></p>
+<p>Recently I lost <em>far too much of my life</em> discovering why a change broke one of our ASP.NET websites.</p>
+<p>We were in the process of migrating to a new CI/CD pipeline, and had successfully tested it in both a development and in a mock production environment. All looked good, so we went ahead and deployed to the production server (This was a blue/green deployment, so the previous version was running happily on a different server the whole time). A temporary subdomain was pointed at the new production release and we went to start some final testing.</p>
+<p>Unfortunately, all we got was a 500 internal server error, no matter what we tried! Even the extremely basic aspx page that was used as a health check would not load, which additionally meant that the health check never passed, and the deployment always failed.</p>
+<p>Any inspection of logs, tracing, or Windows Event log did not produce an informative error message. The Windows event log showed a message like:</p>
+<p><code>An application has reported as being unhealthy. The worker process will now request a recycle. Reason given: ASP.NET application initialization failed.. The data is the error.</code></p>
+<p>Along with a hexadecimal error code <code>0x80070057</code>. The stacktrace could only show the location as “AspNetApplicationInitializationFailureModule”.</p>
+<p>The issue was especially confusing, as the exact same build of the code was working perfectly on the same server images in two other environments. The ops team repeatedly confirmed that the server setups were identical, and the product team repeatedly confirmed that the code build version was also identical.</p>
+<p>Many things were checked and tried:</p>
+<ul>
+<li>doesn&rsquo;t seem to be the database connection string (database configuration files from the working production environemnt deployment were copied, and it didn&rsquo;t work)</li>
+<li>doesn&rsquo;t seem to be web.config (the web.config from working live production deployment was copy-pasted and it didn&rsquo;t work)</li>
+<li>doesn&rsquo;t seem to be missing or corrupted files in deployment (in a fit of desperation, the whole inetpub folder from a working deployment was zipped, uploaded and copy-pasted)</li>
+<li>Didn&rsquo;t seem to be .NET framework installed version</li>
+<li>no issues in Server Management installed features from what we could see</li>
+<li>IIS tracing didn&rsquo;t show anything useful</li>
+<li>no other logs were showing anything useful.</li>
+<li>Creating a different test website on the server (this worked!)</li>
+<li>Remote debugging with Visual Studio (did not work)</li>
+<li>Local debugging with Visual Studio including installing Visual Studio on the server (did not work, the exception could not be caught)</li>
+</ul>
+<h2 id="a-false-clue">A False Clue</h2>
+<p>One test was upgrading the .NET Framework version of site, manually deploying the build to the server, and testing if that worked. It did!</p>
+<p>I assumed that the .NET Framework version was the issue. did a new branch, commit, and build, and redeployed the site. However, that deployment also failed.</p>
+<h2 id="a-real-clue">A Real Clue</h2>
+<p>It was then realised that it was not the .NET Framework upgrade that caused the site to work, it was the manual deployment.</p>
+<p>Further testing confirmed that manually running the deployment script commands would result in the site not working, however, creating the site using the mouse and GUI using IIS Manager would result in the site working fine.</p>
+<p>Both of these scenarios were run, and the resulting <code>C:\Windows\System32\inetsrv\config\applicationHost.config</code> files were saved and compared with diff tool. There were 4 differences, after testing each difference, it was determined that <strong>if the website is created with an IIS site ID of 0 it does not work, but if the website is created with an IIS site ID of 1, it does work.</strong></p>
+<h2 id="explanation">Explanation</h2>
+<p>The deployment script was using the environment number as the site ID. E.g. the development environment had an environment ID of 20, so the site ID was passed in an argument as ‘20’. In the mock production environment, the environment ID was 10 &hellip; and in production, the environment ID was ‘0’.</p>
+<h2 id="conclusion">Conclusion</h2>
+<p>Ultimately, I would <em>like</em> to blame Microsoft and IIS, for not giving a readable error description, and for allowing a site to be created with an invalid ID with <code>appcmd</code>. There is also no documentation to be found about this issue or about IIS site IDs. This might have been one of the first issues in my career for which there truly seemed to be <em>absolutely nothing</em> to be found online about it.</p>
+<p>For our side, I think the fact that the failure was specific to the environment, should have caused us to look more closely at the environment parameters in the deployment scripts. At OneStop, because there is a very old and baked-in convention of using “0” as production environment ID, there is the potential for names or IDs to be set to “0” which may cause strange issues like this.</p>
+<p>Thanks to all of my colleagues who helped with this issue.</p>
+</div>
+    <div class="post__footer">
+      
+
+      
+    </div>
+
+    
+  </div>
+
+
+      </main>
+    </div><footer class="footer footer__base">
+  <ul class="footer__list">
+    <li class="footer__item">
+      &copy;
+      
+        Samuel May
+        2023
+
+
+      
+    </li>
+    
+  </ul>
+</footer></body>
+</html>
